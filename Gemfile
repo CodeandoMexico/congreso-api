@@ -1,14 +1,21 @@
 source 'https://rubygems.org'
 
 gem 'rails', '4.1.1'
-
 gem 'rails-api'
-
-gem 'spring', :group => :development
-
 gem 'pg'
 
+group :development, :test do
+  gem 'spring-commands-rspec'
+  gem 'rspec-rails'
+  gem 'rspec_api_documentation'
+  gem 'factory_girl_rails'
+end
 
+group :development do
+  gem 'spring'
+  gem 'better_errors'
+  gem 'binding_of_caller'
+end
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
