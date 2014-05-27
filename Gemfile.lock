@@ -77,6 +77,7 @@ GEM
       rake (>= 0.8.7)
       thor (>= 0.18.1, < 2.0)
     rake (10.3.2)
+    route_translator (3.2.2)
     rspec (2.14.1)
       rspec-core (~> 2.14.0)
       rspec-expectations (~> 2.14.0)
@@ -130,6 +131,7 @@ DEPENDENCIES
   pg
   rails (= 4.1.1)
   rails-api
+  route_translator
   rspec-rails
   rspec_api_documentation
   spring

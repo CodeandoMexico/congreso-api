@@ -3,6 +3,7 @@ source 'https://rubygems.org'
 gem 'rails', '4.1.1'
 gem 'rails-api'
 gem 'pg'
+gem 'route_translator'
 
 group :development, :test do
   gem 'spring-commands-rspec'
