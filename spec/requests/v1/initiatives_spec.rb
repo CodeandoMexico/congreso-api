@@ -3,7 +3,7 @@ describe "Initiatives API" do
   it "sends a list of initatives" do
     FactoryGirl.create_list(:initiative, 5)
 
-    get '/api/v1/iniciativas'
+    get '/v1/iniciativas'
 
     expect(response).to be_success
 
