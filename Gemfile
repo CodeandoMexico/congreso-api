@@ -4,6 +4,7 @@ gem 'rails', '4.1.1'
 gem 'rails-api'
 gem 'pg'
 gem 'route_translator'
+gem 'active_model_serializers'
 
 group :development, :test do
   gem 'spring-commands-rspec'
