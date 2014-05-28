@@ -7,6 +7,6 @@ describe "Initiatives API" do
 
     expect(response).to be_success
 
-    expect(json['iniciativas'].length).to eq(5)
+    expect(json.length).to eq(5)
   end
 end
