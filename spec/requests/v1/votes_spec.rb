@@ -1,8 +1,7 @@
 require "spec_helper"
 describe "Votes API" do
   it "sends a paginated list of votes for an iniciative" do
-    FactoryGirl.create(:initiative)
-    FactoryGirl.create_list(:vote,10)
+    FactoryGirl.create(:initiative_with_votes)
 
     get '/v1/iniciativas/1/votos'
 

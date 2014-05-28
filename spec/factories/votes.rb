@@ -5,5 +5,6 @@ FactoryGirl.define do
     deputy_id 1
     initiative_id 1
     type ""
+    initiative
   end
 end

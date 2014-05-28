@@ -7,5 +7,12 @@ FactoryGirl.define do
     period "MyString"
     year "MyString"
     legislature "MyString"
+
+    factory :initiative_with_votes do
+      after(:create) do |initiative|
+        create_list(:vote, 10, initiative: initiative)
+      end
+    end
+
   end
 end
