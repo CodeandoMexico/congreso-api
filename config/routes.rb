@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+
   # The priority is based upon order of creation: first created -> highest priority.
 
   # You can have the root of your site routed with "root"
@@ -15,6 +16,7 @@ Rails.application.routes.draw do
   localized do
     namespace :v1 do
       resources :initiatives
+      resources :votes
     end
   end
 end
