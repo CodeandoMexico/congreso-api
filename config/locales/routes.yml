@@ -1,3 +1,4 @@
 es:
   routes:
     initiatives: iniciativas
+    votes: votos

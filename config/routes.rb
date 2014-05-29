@@ -15,8 +15,9 @@ Rails.application.routes.draw do
   #   resources :products
   localized do
     namespace :v1 do
-      resources :initiatives
-      resources :votes
+      resources :initiatives do
+        resources :votes
+      end
     end
   end
 end
