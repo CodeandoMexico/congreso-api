@@ -2,11 +2,11 @@
 
 FactoryGirl.define do
   factory :initiative do
-    decree "MyString"
+    decree "Iniciativa con proyecto de decreto que reforma el artículo 39 de la Ley Orgánica del Congreso General de los Estados Unidos Mexicanos, para aumentar el número de comisiones ordinarias (en lo general y en lo particular)."
     date "2014-05-27"
-    period "MyString"
-    year "MyString"
-    legislature "MyString"
+    period "primer periodo ordinario"
+    year "primer"
+    legislature "LXII"
 
     factory :initiative_with_votes do
       after(:create) do |initiative|
