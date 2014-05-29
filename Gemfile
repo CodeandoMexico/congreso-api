@@ -6,6 +6,10 @@ gem 'pg'
 gem 'route_translator'
 gem 'active_model_serializers'
 
+group :test do
+  gem 'database_cleaner'
+end
+
 group :development, :test do
   gem 'spring-commands-rspec'
   gem 'rspec-rails'
