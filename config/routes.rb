@@ -18,6 +18,7 @@ Rails.application.routes.draw do
       resources :initiatives do
         resources :votes
       end
+      resources :deputies
     end
   end
 end

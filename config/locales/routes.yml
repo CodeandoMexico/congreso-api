@@ -2,3 +2,4 @@ es:
   routes:
     initiatives: iniciativas
     votes: votos
+    deputies: diputados
