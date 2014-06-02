@@ -6,6 +6,10 @@ gem 'pg'
 gem 'route_translator'
 gem 'active_model_serializers'
 
+#pagination
+gem 'kaminari'
+gem 'api-pagination'
+
 group :test do
   gem 'database_cleaner'
 end

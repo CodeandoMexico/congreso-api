@@ -4,6 +4,8 @@ describe "Votes API" do
   let!(:init_with_votes) {FactoryGirl.create(:initiative_with_votes)}
 
   it "sends a paginated list of votes for an iniciative" do
+    double(Vote.max_paginates_per(5))
+
 
     get "/v1/iniciativas/#{init_with_votes.id}/votos"
 
