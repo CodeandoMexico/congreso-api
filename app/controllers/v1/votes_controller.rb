@@ -1,7 +1,7 @@
 module V1
   class VotesController < ApplicationController
     def index
-      @votes = Vote.where("initiative_id = ?", params[:initiative_id])
+      @votes = Initiative.find(params[:initiative_id]).votes
       render json: @votes
     end
   end
