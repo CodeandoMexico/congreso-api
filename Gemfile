@@ -5,6 +5,7 @@ gem 'rails-api'
 gem 'pg'
 gem 'route_translator'
 gem 'active_model_serializers'
+gem 'ckan', github: "acrogenesis/CKAN-rb"
 
 #pagination
 gem 'kaminari'
