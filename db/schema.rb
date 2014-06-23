@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140623185740) do
+ActiveRecord::Schema.define(version: 20140623202154) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -32,6 +32,14 @@ ActiveRecord::Schema.define(version: 20140623185740) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  create_table "resources", force: true do |t|
+    t.string   "guid"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "resources", ["guid"], name: "index_resources_on_guid", using: :btree
 
   create_table "votes", force: true do |t|
     t.integer  "deputy_id"
