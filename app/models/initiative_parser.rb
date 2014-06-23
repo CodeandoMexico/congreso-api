@@ -1,19 +1,34 @@
 class InitiativeParser
-  dataset = CKAN::Action.action_get("package_show",{"id"=>"congreso-abierto"})
-  resources = dataset["result"]["resources"]
+  def self.run
+    dataset = CKAN::Action.action_get('package_show', id: 'congreso-abierto')
+    resources = dataset['result']['resources']
 
-  # esto va a cambiar a ser dinamico
-  resourceURL = resources[0]["url"]
-  resource = Net::HTTP.get(URI(resourceURL))
-  resource = JSON.parse(resource)
-  resource = resource[0]
-  # ^^^^^
+    resources.each do |resource|
+      initiatives_resource = Net::HTTP.get(URI(resource['url']))
+      initiatives_resource = JSON.parse(initiatives_resource)
 
-  Initiative.create do |i|
-    i.decree = resource["decreto"]
-    i.date = resource["fecha"]
-    i.period = resource["periodo"]
-    i.year = resource["ano"]
-    i.legislature = resource["legislatura"]
+      initiatives_resource.each do |initiative_resource|
+        initiative = Initiative.create do |i|
+          i.decree = initiative_resource['decreto']
+          i.date = Time.at(initiative_resource['fecha'])
+          i.period = initiative_resource['periodo']
+          i.year = initiative_resource['ano']
+          i.legislature = initiative_resource['legislatura']
+        end
+        initiative_resource['votos'].each do |tipo, votos_partido|
+          votos_partido.each do |voto_partido|
+            voto_partido['votaciones'].each do |voto|
+              initiative.votes.create do |v|
+                # v.initiative_id = initiative.id
+                v.vote_type = tipo
+                v.deputy = Deputy.find_or_create_by(name: voto,
+                                                    party: voto_partido['partido'])
+                # v.vote_type = votes.tipo_voto
+              end
+            end
+          end
+        end
+      end
+    end
   end
 end
