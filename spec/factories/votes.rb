@@ -2,7 +2,7 @@
 TYPES=["favor","ausente","abstencion","quorum","en contra"]
 FactoryGirl.define do
   factory :vote do
-    deputy_id 1
+    deputy
     vote_type TYPES.sample
     initiative
   end

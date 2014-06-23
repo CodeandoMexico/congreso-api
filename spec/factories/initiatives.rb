@@ -8,7 +8,7 @@ FactoryGirl.define do
     year "primer"
     legislature "LXII"
 
-    factory :initiative_with_votes do
+    factory :initiative_with_votes_and_deputies do
       after(:create) do |initiative|
         create_list(:vote, 10, initiative: initiative)
       end
