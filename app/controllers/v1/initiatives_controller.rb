@@ -2,7 +2,7 @@ module V1
   class InitiativesController < ApplicationController
     def index
       @initiatives = Initiative.all
-      render json: @initiatives
+      paginate json: @initiatives, per_page: 500
     end
 
     def show
