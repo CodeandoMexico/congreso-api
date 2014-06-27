@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 ruby '2.1.2'
 
 gem 'rails_12factor'
-gem 'rails', '4.1.1'
+gem 'rails', '4.1.2'
 gem 'rails-api'
 gem 'pg'
 gem 'route_translator'
