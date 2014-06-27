@@ -7,29 +7,41 @@ class InitiativeParser
       resource = Resource.where(guid: resource_ckan['id'])
       next unless resource.empty?
       resource.create
-      initiatives_resource = Net::HTTP.get(URI(resource_ckan['url']))
-      initiatives_resource = JSON.parse(initiatives_resource)
-      initiatives_resource.each do |initiative_resource|
-        initiative = Initiative.create do |i|
-          i.decree = initiative_resource['decreto']
-          i.date = Time.at(initiative_resource['fecha'])
-          i.period = initiative_resource['periodo']
-          i.year = initiative_resource['ano']
-          i.legislature = initiative_resource['legislatura']
-        end
 
+      initiatives_resource = get_initiaves_resource(resource_ckan['url'])
+
+      initiatives_resource.each do |initiative_resource|
+        initiative = create_initiatives(initiative_resource)
         initiative_resource['votos'].each do |tipo, votos_partido|
-          votos_partido.each do |voto_partido|
-            voto_partido['votaciones'].each do |voto|
-              initiative.votes.create do |v|
-                # v.initiative_id = initiative.id
-                v.vote_type = tipo
-                v.deputy = Deputy.find_or_create_by(name: voto,
-                                                    party: voto_partido['partido'])
-                # v.vote_type = votes.tipo_voto
-              end
-            end
-          end
+          create_votes_and_deputies(tipo, votos_partido, initiative)
+        end
+      end
+    end
+  end
+
+  def self.get_initiaves_resource(url)
+    initiatives_resource = Net::HTTP.get(URI(url))
+    JSON.parse(initiatives_resource)
+  end
+
+  def self.create_initiatives(initiative_resource)
+    initiative = Initiative.create do |i|
+      i.decree = initiative_resource['decreto']
+      i.date = Time.at(initiative_resource['fecha'])
+      i.period = initiative_resource['periodo']
+      i.year = initiative_resource['ano']
+      i.legislature = initiative_resource['legislatura']
+    end
+    initiative
+  end
+
+  def self.create_votes_and_deputies(tipo, votos_partido, initiative)
+    votos_partido.each do |voto_partido|
+      voto_partido['votaciones'].each do |voto|
+        initiative.votes.create do |v|
+          v.vote_type = tipo
+          v.deputy = Deputy.find_or_create_by(name: voto,
+                                              party: voto_partido['partido'])
         end
       end
     end
