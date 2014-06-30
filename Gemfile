@@ -18,11 +18,12 @@ group :test do
   gem 'database_cleaner'
 end
 
+gem 'apitome'
+
 group :development, :test do
   gem 'spring-commands-rspec'
   gem 'rspec-rails'
   gem 'rspec_api_documentation'
-  gem 'apitome'
   gem 'factory_girl_rails'
 end
 
