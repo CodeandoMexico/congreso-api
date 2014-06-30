@@ -1,0 +1,40 @@
+{
+  "resource": "Votes",
+  "http_method": "GET",
+  "route": "/v1/iniciativas/:initative_id/votos",
+  "description": "sends votes for an initiative",
+  "explanation": null,
+  "parameters": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "/v1/iniciativas/11/votos",
+      "request_body": null,
+      "request_headers": {
+        "Host": "example.org",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": null,
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "[{\"id\":1,\"deputy_id\":1,\"initiative_id\":11,\"vote_type\":\"ausente\"},{\"id\":2,\"deputy_id\":2,\"initiative_id\":11,\"vote_type\":\"ausente\"},{\"id\":3,\"deputy_id\":3,\"initiative_id\":11,\"vote_type\":\"ausente\"},{\"id\":4,\"deputy_id\":4,\"initiative_id\":11,\"vote_type\":\"ausente\"},{\"id\":5,\"deputy_id\":5,\"initiative_id\":11,\"vote_type\":\"ausente\"},{\"id\":6,\"deputy_id\":6,\"initiative_id\":11,\"vote_type\":\"ausente\"},{\"id\":7,\"deputy_id\":7,\"initiative_id\":11,\"vote_type\":\"ausente\"},{\"id\":8,\"deputy_id\":8,\"initiative_id\":11,\"vote_type\":\"ausente\"},{\"id\":9,\"deputy_id\":9,\"initiative_id\":11,\"vote_type\":\"ausente\"},{\"id\":10,\"deputy_id\":10,\"initiative_id\":11,\"vote_type\":\"ausente\"}]",
+      "response_headers": {
+        "X-Frame-Options": "SAMEORIGIN",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Content-Type-Options": "nosniff",
+        "Content-Type": "application/json; charset=utf-8",
+        "ETag": "\"702f45a0bcce9bd86b4f481e024f941a\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "X-Request-Id": "462e2dc4-4dca-43b9-8917-d47a86956055",
+        "X-Runtime": "0.013485",
+        "Content-Length": "643"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": null
+    }
+  ]
+}

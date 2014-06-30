@@ -1,0 +1,40 @@
+{
+  "resource": "Deputies",
+  "http_method": "GET",
+  "route": "/v1/diputados",
+  "description": "sends a list of deputies",
+  "explanation": null,
+  "parameters": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "/v1/diputados",
+      "request_body": null,
+      "request_headers": {
+        "Host": "example.org",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": null,
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "[{\"id\":1,\"name\":\"NombreDiputado\",\"party\":\"PartidoDiputado\"},{\"id\":2,\"name\":\"NombreDiputado\",\"party\":\"PartidoDiputado\"},{\"id\":3,\"name\":\"NombreDiputado\",\"party\":\"PartidoDiputado\"},{\"id\":4,\"name\":\"NombreDiputado\",\"party\":\"PartidoDiputado\"},{\"id\":5,\"name\":\"NombreDiputado\",\"party\":\"PartidoDiputado\"},{\"id\":6,\"name\":\"NombreDiputado\",\"party\":\"PartidoDiputado\"},{\"id\":7,\"name\":\"NombreDiputado\",\"party\":\"PartidoDiputado\"},{\"id\":8,\"name\":\"NombreDiputado\",\"party\":\"PartidoDiputado\"},{\"id\":9,\"name\":\"NombreDiputado\",\"party\":\"PartidoDiputado\"},{\"id\":10,\"name\":\"NombreDiputado\",\"party\":\"PartidoDiputado\"}]",
+      "response_headers": {
+        "X-Frame-Options": "SAMEORIGIN",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Content-Type-Options": "nosniff",
+        "Content-Type": "application/json; charset=utf-8",
+        "ETag": "\"17d4ca65a9ad71814f6aeb6f94c15e5e\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "X-Request-Id": "bd4b8c5e-717d-4dde-9b76-aeebb5a4c898",
+        "X-Runtime": "0.014111",
+        "Content-Length": "592"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": null
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "resources": [
+    {
+      "name": "Deputies",
+      "examples": [
+        {
+          "description": "sends a list of deputies",
+          "link": "deputies/sends_a_list_of_deputies.json",
+          "groups": "all"
+        }
+      ]
+    },
+    {
+      "name": "Initiatives",
+      "examples": [
+        {
+          "description": "can go to next page of initiatives",
+          "link": "initiatives/can_go_to_next_page_of_initiatives.json",
+          "groups": "all"
+        },
+        {
+          "description": "sends a list of paginated initatives",
+          "link": "initiatives/sends_a_list_of_paginated_initatives.json",
+          "groups": "all"
+        }
+      ]
+    },
+    {
+      "name": "Votes",
+      "examples": [
+        {
+          "description": "sends votes for an initiative",
+          "link": "votes/sends_votes_for_an_initiative.json",
+          "groups": "all"
+        }
+      ]
+    }
+  ]
+}

@@ -10,7 +10,7 @@ gem 'route_translator'
 gem 'active_model_serializers'
 gem 'ckan', github: "acrogenesis/CKAN-rb"
 
-#pagination
+# pagination
 gem 'kaminari'
 gem 'api-pagination'
 
@@ -22,6 +22,7 @@ group :development, :test do
   gem 'spring-commands-rspec'
   gem 'rspec-rails'
   gem 'rspec_api_documentation'
+  gem 'apitome'
   gem 'factory_girl_rails'
 end
 

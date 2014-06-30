@@ -1,0 +1,43 @@
+{
+  "resource": "Initiatives",
+  "http_method": "GET",
+  "route": "/v1/iniciativas",
+  "description": "can go to next page of initiatives",
+  "explanation": null,
+  "parameters": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "/v1/iniciativas?page=2",
+      "request_body": null,
+      "request_headers": {
+        "Host": "example.org",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+        "page": "2"
+      },
+      "request_content_type": null,
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "[{\"id\":6,\"decree\":\"Iniciativa con proyecto de decreto que reforma el artículo 39 de la Ley Orgánica del Congreso General de los Estados Unidos Mexicanos, para aumentar el número de comisiones ordinarias (en lo general y en lo particular).\",\"date\":\"2014-05-27\",\"period\":\"primer periodo ordinario\",\"year\":\"primer\",\"legislature\":\"LXII\"},{\"id\":7,\"decree\":\"Iniciativa con proyecto de decreto que reforma el artículo 39 de la Ley Orgánica del Congreso General de los Estados Unidos Mexicanos, para aumentar el número de comisiones ordinarias (en lo general y en lo particular).\",\"date\":\"2014-05-27\",\"period\":\"primer periodo ordinario\",\"year\":\"primer\",\"legislature\":\"LXII\"},{\"id\":8,\"decree\":\"Iniciativa con proyecto de decreto que reforma el artículo 39 de la Ley Orgánica del Congreso General de los Estados Unidos Mexicanos, para aumentar el número de comisiones ordinarias (en lo general y en lo particular).\",\"date\":\"2014-05-27\",\"period\":\"primer periodo ordinario\",\"year\":\"primer\",\"legislature\":\"LXII\"},{\"id\":9,\"decree\":\"Iniciativa con proyecto de decreto que reforma el artículo 39 de la Ley Orgánica del Congreso General de los Estados Unidos Mexicanos, para aumentar el número de comisiones ordinarias (en lo general y en lo particular).\",\"date\":\"2014-05-27\",\"period\":\"primer periodo ordinario\",\"year\":\"primer\",\"legislature\":\"LXII\"},{\"id\":10,\"decree\":\"Iniciativa con proyecto de decreto que reforma el artículo 39 de la Ley Orgánica del Congreso General de los Estados Unidos Mexicanos, para aumentar el número de comisiones ordinarias (en lo general y en lo particular).\",\"date\":\"2014-05-27\",\"period\":\"primer periodo ordinario\",\"year\":\"primer\",\"legislature\":\"LXII\"}]",
+      "response_headers": {
+        "X-Frame-Options": "SAMEORIGIN",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Content-Type-Options": "nosniff",
+        "Link": "<http://example.org/v1/iniciativas?page=1>; rel=\"first\", <http://example.org/v1/iniciativas?page=1>; rel=\"prev\", <http://example.org/v1/iniciativas?page=3>; rel=\"last\", <http://example.org/v1/iniciativas?page=3>; rel=\"next\"",
+        "Total": "11",
+        "Content-Type": "application/json; charset=utf-8",
+        "ETag": "\"1bc867aab2f2ae69c70d083b3c96ff57\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "X-Request-Id": "904180ad-3971-48b6-83fa-71d7a72264ae",
+        "X-Runtime": "0.002826",
+        "Content-Length": "1682"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": null
+    }
+  ]
+}
