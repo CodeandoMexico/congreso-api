@@ -15,7 +15,7 @@ ActiveRecord::Migration.maintain_test_schema!
 RSpec.configure do |config|
 
   config.include FactoryGirl::Syntax::Methods
-  config.include Requests::JsonHelpers, type: :request
+  config.include RspecApiDocumentation::JsonHelpers
 
   # ## Mock Framework
   #
