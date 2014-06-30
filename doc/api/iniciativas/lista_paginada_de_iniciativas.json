@@ -1,8 +1,8 @@
 {
-  "resource": "Initiatives",
+  "resource": "Iniciativas",
   "http_method": "GET",
   "route": "/v1/iniciativas",
-  "description": "sends a list of paginated initatives",
+  "description": "Lista paginada de iniciativas",
   "explanation": null,
   "parameters": [
 
@@ -31,8 +31,8 @@
         "Content-Type": "application/json; charset=utf-8",
         "ETag": "\"f770478ae0a2bc53f1366e61caffd8fa\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "ef6acbca-ae80-4096-ac64-bdccc31882d5",
-        "X-Runtime": "0.006532",
+        "X-Request-Id": "85f71fe3-5408-4181-a50c-4d2e730e69f0",
+        "X-Runtime": "0.007806",
         "Content-Length": "1681"
       },
       "response_content_type": "application/json; charset=utf-8",

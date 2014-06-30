@@ -1,8 +1,8 @@
 {
-  "resource": "Deputies",
+  "resource": "Diputados",
   "http_method": "GET",
   "route": "/v1/diputados",
-  "description": "sends a list of deputies",
+  "description": "Lista de diputados",
   "explanation": null,
   "parameters": [
 
@@ -29,8 +29,8 @@
         "Content-Type": "application/json; charset=utf-8",
         "ETag": "\"17d4ca65a9ad71814f6aeb6f94c15e5e\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "bd4b8c5e-717d-4dde-9b76-aeebb5a4c898",
-        "X-Runtime": "0.014111",
+        "X-Request-Id": "03d383dc-e977-471a-a0c3-47d2d5afe140",
+        "X-Runtime": "0.040188",
         "Content-Length": "592"
       },
       "response_content_type": "application/json; charset=utf-8",

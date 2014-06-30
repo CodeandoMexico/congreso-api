@@ -1,36 +1,36 @@
 {
   "resources": [
     {
-      "name": "Deputies",
+      "name": "Diputados",
       "examples": [
         {
-          "description": "sends a list of deputies",
-          "link": "deputies/sends_a_list_of_deputies.json",
+          "description": "Lista de diputados",
+          "link": "diputados/lista_de_diputados.json",
           "groups": "all"
         }
       ]
     },
     {
-      "name": "Initiatives",
+      "name": "Iniciativas",
       "examples": [
         {
-          "description": "can go to next page of initiatives",
-          "link": "initiatives/can_go_to_next_page_of_initiatives.json",
+          "description": "Lista paginada de iniciativas",
+          "link": "iniciativas/lista_paginada_de_iniciativas.json",
           "groups": "all"
         },
         {
-          "description": "sends a list of paginated initatives",
-          "link": "initiatives/sends_a_list_of_paginated_initatives.json",
+          "description": "Se puede ir a la siguiente pagina de las iniciativas",
+          "link": "iniciativas/se_puede_ir_a_la_siguiente_pagina_de_las_iniciativas.json",
           "groups": "all"
         }
       ]
     },
     {
-      "name": "Votes",
+      "name": "Votos",
       "examples": [
         {
-          "description": "sends votes for an initiative",
-          "link": "votes/sends_votes_for_an_initiative.json",
+          "description": "Lista de votos para una iniciativa",
+          "link": "votos/lista_de_votos_para_una_iniciativa.json",
           "groups": "all"
         }
       ]

@@ -1,8 +1,8 @@
 {
-  "resource": "Initiatives",
+  "resource": "Iniciativas",
   "http_method": "GET",
   "route": "/v1/iniciativas",
-  "description": "can go to next page of initiatives",
+  "description": "Se puede ir a la siguiente pagina de las iniciativas",
   "explanation": null,
   "parameters": [
 
@@ -32,8 +32,8 @@
         "Content-Type": "application/json; charset=utf-8",
         "ETag": "\"1bc867aab2f2ae69c70d083b3c96ff57\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "904180ad-3971-48b6-83fa-71d7a72264ae",
-        "X-Runtime": "0.002826",
+        "X-Request-Id": "a6647294-cbcf-41c4-926e-b98e397a6311",
+        "X-Runtime": "0.003350",
         "Content-Length": "1682"
       },
       "response_content_type": "application/json; charset=utf-8",
