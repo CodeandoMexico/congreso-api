@@ -1,11 +1,11 @@
 require 'spec_helper'
 require 'rspec_api_documentation/dsl'
 
-resource 'Initiatives' do
+resource 'Iniciativas' do
   FactoryGirl.create_list(:initiative, 10)
 
   get '/v1/iniciativas' do
-    example 'sends a list of paginated initatives' do
+    example 'Lista paginada de iniciativas' do
       double(Initiative.max_paginates_per(5))
       do_request
 
@@ -14,7 +14,7 @@ resource 'Initiatives' do
       expect(json.length).to eq(5)
     end
 
-    example 'can go to next page of initiatives' do
+    example 'Se puede ir a la siguiente pagina de las iniciativas' do
       double(Initiative.max_paginates_per(5))
 
       do_request(page: 2)

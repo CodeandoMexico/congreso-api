@@ -1,9 +1,9 @@
 require 'spec_helper'
 require 'rspec_api_documentation/dsl'
 
-resource 'Deputies' do
+resource 'Diputados' do
   get '/v1/diputados' do
-    example_request 'sends a list of deputies' do
+    example_request 'Lista de diputados' do
       status.should be (200)
     end
   end
