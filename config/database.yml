@@ -23,5 +23,8 @@ test:
   database: api-congreso-test
 
 production:
-  <<: *default
-  database: api-congreso-production
+  database: rails
+  adapter: mysql2
+  host: localhost
+  username: rails
+  password: ENV['MYSQLPASS']
