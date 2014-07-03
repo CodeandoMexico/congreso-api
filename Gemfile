@@ -3,6 +3,7 @@ source 'https://rubygems.org'
 gem 'rails', '4.1.2'
 gem 'rails-api'
 gem 'mysql2'
+gem 'pg'
 gem 'route_translator'
 gem 'active_model_serializers'
 gem 'ckan', github: "acrogenesis/CKAN-rb"
