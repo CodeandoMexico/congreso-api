@@ -1,4 +1,5 @@
 class DeputyTopSerializer < ActiveModel::Serializer
+  cached
   attributes :id, :name, :party, :vote_count
 
   # def count
