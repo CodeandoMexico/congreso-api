@@ -1,11 +1,8 @@
 source 'https://rubygems.org'
 
-ruby '2.1.2'
-
-gem 'rails_12factor'
 gem 'rails', '4.1.2'
 gem 'rails-api'
-gem 'pg'
+gem 'mysql2'
 gem 'route_translator'
 gem 'active_model_serializers'
 gem 'ckan', github: "acrogenesis/CKAN-rb"

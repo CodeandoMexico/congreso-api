@@ -78,7 +78,7 @@ GEM
     minitest (5.3.5)
     multi_json (1.10.1)
     mustache (0.99.5)
-    pg (0.17.1)
+    mysql2 (0.3.16)
     polyglot (0.3.5)
     rack (1.5.2)
     rack-test (0.6.2)
@@ -96,11 +96,6 @@ GEM
     rails-api (0.2.1)
       actionpack (>= 3.2.11)
       railties (>= 3.2.11)
-    rails_12factor (0.0.2)
-      rails_serve_static_assets
-      rails_stdout_logging
-    rails_serve_static_assets (0.0.2)
-    rails_stdout_logging (0.0.3)
     railties (4.1.2)
       actionpack (= 4.1.2)
       activesupport (= 4.1.2)
@@ -168,10 +163,9 @@ DEPENDENCIES
   factory_girl_rails
   hirb
   kaminari
-  pg
+  mysql2
   rails (= 4.1.2)
   rails-api
-  rails_12factor
   route_translator
   rspec-rails
   rspec_api_documentation
