@@ -2,6 +2,8 @@ class Deputy < ActiveRecord::Base
   has_many :votes
   has_many :initiatives, through: :votes
 
+  attr_accessor :vote_count
+
   def self.top(vote_type = '', period = '', year='', legislature = '', order = 'DESC', limit = 25)
     initiatives = Initiative.where("period = '#{period}'").where("year = '#{year}'").where("legislature = '#{legislature}'").includes(:votes)
 
@@ -13,7 +15,8 @@ class Deputy < ActiveRecord::Base
     deputies = deputies.sort_by(&:last)
     deputies = deputies.reverse if order == 'DESC'
 
-    Deputy.find(deputies.first(limit.to_i).to_h.keys)
+    a = Deputy.find(deputies.first(limit.to_i).to_h.keys)
+    a.map { |d| d.vote_count = deputies.to_h[d.id] }
+    a
   end
-
 end
