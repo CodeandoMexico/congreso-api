@@ -10,6 +10,9 @@ gem 'route_translator'
 gem 'active_model_serializers'
 gem 'ckan', github: "acrogenesis/CKAN-rb"
 
+gem "actionpack-action_caching"
+
+
 # pagination
 gem 'kaminari'
 gem 'api-pagination'

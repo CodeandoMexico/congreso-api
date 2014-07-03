@@ -1,5 +1,8 @@
 module V1
   class DeputiesController < ApplicationController
+    include ActionController::Caching
+    caches_action :top, cache_path: proc { |c| c.params }
+
     def index
       @deputies = Deputy.all
       render json: @deputies
