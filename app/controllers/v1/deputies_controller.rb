@@ -10,9 +10,10 @@ module V1
 
     def top
       initiative = Initiative.where(nil)
-      initiative = initiative.period(params[:periodo]) if params[:periodo].present?
-      initiative = initiative.year(params[:ano]) if params[:ano].present?
-      initiative = initiative.legislature(params[:legislatura]) if params[:legislatura].present?
+
+      filter_initiative_params.each do |key, value|
+        initiative = initiative.public_send(key, value) if value.present?
+      end
 
       order = params[:order] ? params[:order] : nil
       limit = params[:limit] ? params[:limit] : nil
@@ -28,6 +29,10 @@ module V1
     def set_access_control_headers
       headers['Access-Control-Allow-Origin'] = '*'
       headers['Access-Control-Request-Method'] = %w(GET POST OPTIONS).join(',')
+    end
+
+    def filter_initiative_params
+      params.slice(:periodo, :ano, :legislatura)
     end
   end
 end
