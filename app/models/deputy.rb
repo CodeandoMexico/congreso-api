@@ -8,6 +8,8 @@ class Deputy < ActiveRecord::Base
     order ||= 'DESC'
     limit ||= 25
 
+    order.upcase!
+
     initiatives = initiative.includes(:votes)
 
     votes = initiatives.map { |i| i.votes }
@@ -20,6 +22,12 @@ class Deputy < ActiveRecord::Base
 
     a = Deputy.find(deputies.first(limit.to_i).to_h.keys)
     a.map { |d| d.vote_count = deputies.to_h[d.id] }
-    a
+    a = a.sort_by &:vote_count
+
+    if order == 'DESC'
+      a.reverse
+    else
+      a
+    end
   end
 end
