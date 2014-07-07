@@ -4,8 +4,11 @@ class Deputy < ActiveRecord::Base
 
   attr_accessor :vote_count
 
-  def self.top(vote_type = '', period = '', year='', legislature = '', order = 'DESC', limit = 25)
-    initiatives = Initiative.where("period = '#{period}'").where("year = '#{year}'").where("legislature = '#{legislature}'").includes(:votes)
+  def self.top(vote_type, initiative, order = nil, limit = nil)
+    order ||= 'DESC'
+    limit ||= 25
+
+    initiatives = initiative.includes(:votes)
 
     votes = initiatives.map { |i| i.votes }
     votes = votes.flatten

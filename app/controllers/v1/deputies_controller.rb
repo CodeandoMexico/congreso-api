@@ -9,18 +9,25 @@ module V1
     end
 
     def top
-      @top = Deputy.top(params[:tipo_voto], params[:periodo], params[:ano], params[:legislatura], params[:order], params[:limit])
+      initiative = Initiative.where(nil)
+      initiative = initiative.period(params[:periodo]) if params[:periodo].present?
+      initiative = initiative.year(params[:ano]) if params[:ano].present?
+      initiative = initiative.legislature(params[:legislatura]) if params[:legislatura].present?
 
-      render json: @top, each_serializer: DeputyTopSerializer#, tipo_voto: params[:tipo_voto]
-      # render json: @top
+      order = params[:order] ? params[:order] : nil
+      limit = params[:limit] ? params[:limit] : nil
+
+      @top = Deputy.top(params[:tipo_voto], initiative, order, limit)
+
+      render json: @top, each_serializer: DeputyTopSerializer
     end
 
     private
 
     # This is used to allow the cross origin requests
     def set_access_control_headers
-      headers['Access-Control-Allow-Origin'] = "*"
-      headers['Access-Control-Request-Method'] = %w{GET POST OPTIONS}.join(",")
+      headers['Access-Control-Allow-Origin'] = '*'
+      headers['Access-Control-Request-Method'] = %w(GET POST OPTIONS).join(',')
     end
   end
 end
