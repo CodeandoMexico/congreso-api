@@ -7,6 +7,9 @@
   "parameters": [
 
   ],
+  "response_fields": [
+
+  ],
   "requests": [
     {
       "request_method": "GET",
@@ -29,8 +32,8 @@
         "Content-Type": "application/json; charset=utf-8",
         "ETag": "\"17d4ca65a9ad71814f6aeb6f94c15e5e\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "03d383dc-e977-471a-a0c3-47d2d5afe140",
-        "X-Runtime": "0.040188",
+        "X-Request-Id": "0e1e9f06-4d55-44e9-94ff-762596f91b90",
+        "X-Runtime": "0.013354",
         "Content-Length": "592"
       },
       "response_content_type": "application/json; charset=utf-8",

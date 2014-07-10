@@ -7,6 +7,9 @@
   "parameters": [
 
   ],
+  "response_fields": [
+
+  ],
   "requests": [
     {
       "request_method": "GET",
@@ -21,17 +24,17 @@
       "request_content_type": null,
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "[{\"id\":1,\"deputy_id\":1,\"initiative_id\":11,\"vote_type\":\"quorum\"},{\"id\":2,\"deputy_id\":2,\"initiative_id\":11,\"vote_type\":\"quorum\"},{\"id\":3,\"deputy_id\":3,\"initiative_id\":11,\"vote_type\":\"quorum\"},{\"id\":4,\"deputy_id\":4,\"initiative_id\":11,\"vote_type\":\"quorum\"},{\"id\":5,\"deputy_id\":5,\"initiative_id\":11,\"vote_type\":\"quorum\"},{\"id\":6,\"deputy_id\":6,\"initiative_id\":11,\"vote_type\":\"quorum\"},{\"id\":7,\"deputy_id\":7,\"initiative_id\":11,\"vote_type\":\"quorum\"},{\"id\":8,\"deputy_id\":8,\"initiative_id\":11,\"vote_type\":\"quorum\"},{\"id\":9,\"deputy_id\":9,\"initiative_id\":11,\"vote_type\":\"quorum\"},{\"id\":10,\"deputy_id\":10,\"initiative_id\":11,\"vote_type\":\"quorum\"}]",
+      "response_body": "[{\"id\":1,\"deputy_id\":1,\"initiative_id\":11,\"vote_type\":\"abstencion\"},{\"id\":2,\"deputy_id\":2,\"initiative_id\":11,\"vote_type\":\"abstencion\"},{\"id\":3,\"deputy_id\":3,\"initiative_id\":11,\"vote_type\":\"abstencion\"},{\"id\":4,\"deputy_id\":4,\"initiative_id\":11,\"vote_type\":\"abstencion\"},{\"id\":5,\"deputy_id\":5,\"initiative_id\":11,\"vote_type\":\"abstencion\"},{\"id\":6,\"deputy_id\":6,\"initiative_id\":11,\"vote_type\":\"abstencion\"},{\"id\":7,\"deputy_id\":7,\"initiative_id\":11,\"vote_type\":\"abstencion\"},{\"id\":8,\"deputy_id\":8,\"initiative_id\":11,\"vote_type\":\"abstencion\"},{\"id\":9,\"deputy_id\":9,\"initiative_id\":11,\"vote_type\":\"abstencion\"},{\"id\":10,\"deputy_id\":10,\"initiative_id\":11,\"vote_type\":\"abstencion\"}]",
       "response_headers": {
         "X-Frame-Options": "SAMEORIGIN",
         "X-XSS-Protection": "1; mode=block",
         "X-Content-Type-Options": "nosniff",
         "Content-Type": "application/json; charset=utf-8",
-        "ETag": "\"ca0dab89e4e0a2a1932d7d377db1473c\"",
+        "ETag": "\"6d2c14ab751a8c1c32ec72313d5e0053\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "479cbf01-5b65-4a7b-b1cd-759763cdab64",
-        "X-Runtime": "0.016084",
-        "Content-Length": "633"
+        "X-Request-Id": "ba846f4f-c822-4e3c-b989-ebe7ab81f14f",
+        "X-Runtime": "0.015653",
+        "Content-Length": "673"
       },
       "response_content_type": "application/json; charset=utf-8",
       "curl": null

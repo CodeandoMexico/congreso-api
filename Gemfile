@@ -20,7 +20,7 @@ group :test do
   gem 'database_cleaner'
 end
 
-gem 'apitome'
+gem 'apitome', github: 'acrogenesis/apitome'
 
 group :development, :test do
   gem 'spring-commands-rspec'
