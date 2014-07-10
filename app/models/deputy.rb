@@ -4,11 +4,11 @@ class Deputy < ActiveRecord::Base
 
   attr_accessor :vote_count
 
-  def self.top(vote_type, initiative, order = nil, limit = nil)
-    order ||= 'DESC'
-    limit ||= 25
+  def self.top(vote_type, initiative, params)
+    params[:order] ||= 'DESC'
+    params[:limit] ||= 25
 
-    order.upcase!
+    params[:order].upcase!
 
     initiatives = initiative.includes(:votes)
 
@@ -18,13 +18,13 @@ class Deputy < ActiveRecord::Base
 
     deputies = votes.where("vote_type = '#{vote_type}'").group(:deputy_id).count('vote_type')
     deputies = deputies.sort_by(&:last)
-    deputies = deputies.reverse if order == 'DESC'
+    deputies = deputies.reverse if params[:order] == 'DESC'
 
-    a = Deputy.find(deputies.first(limit.to_i).to_h.keys)
+    a = Deputy.find(deputies.first(params[:limit].to_i).to_h.keys)
     a.map { |d| d.vote_count = deputies.to_h[d.id] }
     a = a.sort_by(&:vote_count)
 
-    if order == 'DESC'
+    if params[:order] == 'DESC'
       a.reverse
     else
       a

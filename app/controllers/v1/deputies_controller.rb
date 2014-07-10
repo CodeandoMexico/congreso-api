@@ -15,10 +15,7 @@ module V1
         initiative = initiative.public_send(key, value) if value.present?
       end
 
-      order = params[:order] ? params[:order] : nil
-      limit = params[:limit] ? params[:limit] : nil
-
-      @top = Deputy.top(params[:tipo_voto], initiative, order, limit)
+      @top = Deputy.top(params[:tipo_voto], initiative, filter_order_limit_params)
 
       render json: @top, each_serializer: DeputyTopSerializer
     end
@@ -33,6 +30,10 @@ module V1
 
     def filter_initiative_params
       params.slice(:periodo, :ano, :legislatura)
+    end
+
+    def filter_order_limit_params
+      params.slice(:order, :limit)
     end
   end
 end
