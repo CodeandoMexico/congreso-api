@@ -22,7 +22,7 @@ class Deputy < ActiveRecord::Base
 
     a = Deputy.find(deputies.first(limit.to_i).to_h.keys)
     a.map { |d| d.vote_count = deputies.to_h[d.id] }
-    a = a.sort_by &:vote_count
+    a = a.sort_by(&:vote_count)
 
     if order == 'DESC'
       a.reverse

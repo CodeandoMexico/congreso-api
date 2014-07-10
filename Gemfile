@@ -8,10 +8,9 @@ gem 'mysql2'
 gem 'pg'
 gem 'route_translator'
 gem 'active_model_serializers'
-gem 'ckan', github: "acrogenesis/CKAN-rb"
+gem 'ckan', github: 'acrogenesis/CKAN-rb'
 
-gem "actionpack-action_caching"
-
+gem 'actionpack-action_caching'
 
 # pagination
 gem 'kaminari'
