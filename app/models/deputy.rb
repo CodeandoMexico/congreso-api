@@ -7,14 +7,11 @@ class Deputy < ActiveRecord::Base
   def self.top(vote_type, initiative, params)
     params[:order] ||= 'DESC'
     params[:limit] ||= 25
-
     params[:order].upcase!
 
     initiatives = initiative.includes(:votes)
 
-    votes = initiatives.map { |i| i.votes }
-    votes = votes.flatten
-    votes = Vote.where("id IN (#{votes.map(&:id).join(',')})")
+    votes = Vote.initiatives_votes(initiatives)
 
     deputies = votes.where("vote_type = '#{vote_type}'").group(:deputy_id).count('vote_type')
     deputies = deputies.sort_by(&:last)
