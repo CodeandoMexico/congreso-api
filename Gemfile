@@ -10,6 +10,9 @@ gem 'route_translator'
 gem 'active_model_serializers'
 gem 'ckan', github: 'acrogenesis/CKAN-rb'
 
+# better dokku compability
+gem 'rails_12factor'
+
 gem 'actionpack-action_caching'
 
 # pagination
