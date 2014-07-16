@@ -21,10 +21,7 @@ class Deputy < ActiveRecord::Base
     a.map { |d| d.vote_count = deputies.to_h[d.id] }
     a = a.sort_by(&:vote_count)
 
-    if params[:order] == 'DESC'
-      a.reverse
-    else
-      a
-    end
+    return a.reverse if params[:order] == 'DESC'
+    a
   end
 end
