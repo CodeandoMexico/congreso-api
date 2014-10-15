@@ -236,7 +236,7 @@ body.single-page .docs-section section.readme article {
   margin-bottom: -20px;
 }
 body.single-page .docs-section section article {
-  padding-top: 50px;
+  padding-top: 10px;
 }
 
 @media screen and (min-width: 992px) {
