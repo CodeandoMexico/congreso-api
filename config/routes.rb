@@ -14,6 +14,7 @@ Rails.application.routes.draw do
   # Example resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products
   localized do
+    root to: redirect('/documentacion')
     namespace :v1 do
       resources :initiatives do
         resources :votes
