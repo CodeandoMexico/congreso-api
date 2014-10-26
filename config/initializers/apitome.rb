@@ -3,7 +3,7 @@ Apitome.setup do |config|
   # This determines where the Apitome routes will be mounted. Changing this to '/api/documentation' for instance would
   # allow you to browse to http://localhost:3000/api/documentation to see your api documentation. Set to nil and mount
   # it yourself if you need to.
-  config.mount_at = '/documentacion'
+  config.mount_at = '/congreso'
 
   # This defaults to Rails.root if left nil. If you're providing documentation for an engine using a dummy application
   # it can be useful to set this to your engines root.. E.g. Application::Engine.root
@@ -14,7 +14,7 @@ Apitome.setup do |config|
   config.doc_path = 'doc/api'
 
   # The title of the documentation -- If your project has a name, you'll want to put it here.
-  config.title = 'Documentación de Congres Abierto API'
+  config.title = 'Congreso Abierto API'
 
   # The main layout view for all documentation pages. By default this is pretty basic, but you may want to use your own
   # application layout.
