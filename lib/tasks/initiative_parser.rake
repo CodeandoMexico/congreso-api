@@ -8,9 +8,11 @@ namespace :initiative_parser do
     puts 'Iniciando parse de iniciativas'
     dataset = CKAN::Action.action_get('package_show', id: 'congreso-abierto')
     resources_ckan = dataset['result']['resources']
-
+    resource_count = dataset['result']['num_resources'].to_int
     resources_ckan.each do |resource_ckan|
       resource = Resource.where(guid: resource_ckan['id'])
+      puts "Faltan #{resource_count} recursos"
+      resource_count -= 1
       next unless resource.empty?
       resource.create
 
@@ -23,6 +25,7 @@ namespace :initiative_parser do
           create_votes_and_deputies(tipo, votos_partido, initiative)
         end
       end
+      puts ''
     end
   end
 
