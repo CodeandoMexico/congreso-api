@@ -2,7 +2,7 @@
 
 FactoryGirl.define do
   factory :deputy do
-    name "NombreDiputado"
-    party "PartidoDiputado"
+    name 'NombreDiputado'
+    party 'PartidoDiputado'
   end
 end

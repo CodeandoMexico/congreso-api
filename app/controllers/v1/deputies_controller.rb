@@ -1,7 +1,7 @@
 module V1
   class DeputiesController < ApplicationController
     include ActionController::Caching
-    caches_action :top, cache_path: proc { |c| c.params }, expires_in: 1.day
+    caches_action :top, cache_path: proc(&:params), expires_in: 1.day
 
     def index
       @deputies = Deputy.all
