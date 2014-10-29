@@ -9,7 +9,7 @@ resource 'Iniciativas' do
       double(Initiative.max_paginates_per(5))
       do_request
 
-      status.should be 200
+      expect(status).to eq(200)
 
       expect(json.length).to eq(5)
     end
@@ -18,7 +18,7 @@ resource 'Iniciativas' do
       double(Initiative.max_paginates_per(5))
 
       do_request(page: 2)
-      status.should be(200)
+      expect(status).to eq(200)
 
       expect(json.length).to eq(5)
     end
