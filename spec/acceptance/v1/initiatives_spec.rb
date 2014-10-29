@@ -14,7 +14,7 @@ resource 'Iniciativas' do
       expect(json.length).to eq(5)
     end
 
-    example 'Se puede ir a la siguiente pagina de las iniciativas' do
+    example 'Siguiente página de las iniciativas' do
       double(Initiative.max_paginates_per(5))
 
       do_request(page: 2)
