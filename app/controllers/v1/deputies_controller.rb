@@ -8,6 +8,10 @@ module V1
       render json: @deputies
     end
 
+    def show
+      render json: Deputy.find(params[:id])
+    end
+
     def top
       initiative = Initiative.where(nil)
 

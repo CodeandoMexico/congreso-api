@@ -19,7 +19,7 @@ Rails.application.routes.draw do
       resources :initiatives do
         resources :votes
       end
-      resources :deputies, only: [:index]
+      resources :deputies, only: [:index, :show]
       get '/deputies/top' => 'deputies#top', as: :deputies_top
     end
   end

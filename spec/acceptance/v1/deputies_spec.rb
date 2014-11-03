@@ -7,4 +7,10 @@ resource 'Diputados' do
       expect(status).to eq(200)
     end
   end
+
+  get '/v1/diputados/1' do
+    example_request 'Información de un diputado' do
+      expect(status).to eq(200)
+    end
+  end
 end
