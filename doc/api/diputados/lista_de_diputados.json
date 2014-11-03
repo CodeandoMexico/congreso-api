@@ -24,17 +24,17 @@
       "request_content_type": null,
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "[{\"id\":1,\"name\":\"NombreDiputado\",\"party\":\"PartidoDiputado\"},{\"id\":2,\"name\":\"NombreDiputado\",\"party\":\"PartidoDiputado\"},{\"id\":3,\"name\":\"NombreDiputado\",\"party\":\"PartidoDiputado\"},{\"id\":4,\"name\":\"NombreDiputado\",\"party\":\"PartidoDiputado\"},{\"id\":5,\"name\":\"NombreDiputado\",\"party\":\"PartidoDiputado\"},{\"id\":6,\"name\":\"NombreDiputado\",\"party\":\"PartidoDiputado\"},{\"id\":7,\"name\":\"NombreDiputado\",\"party\":\"PartidoDiputado\"},{\"id\":8,\"name\":\"NombreDiputado\",\"party\":\"PartidoDiputado\"},{\"id\":9,\"name\":\"NombreDiputado\",\"party\":\"PartidoDiputado\"},{\"id\":10,\"name\":\"NombreDiputado\",\"party\":\"PartidoDiputado\"}]",
+      "response_body": "[{\"id\":1,\"name\":\"NombreDiputado\",\"party\":\"PartidoDiputado\",\"created_at\":\"2014-11-03T23:53:20.000Z\",\"updated_at\":\"2014-11-03T23:53:20.000Z\"},{\"id\":2,\"name\":\"NombreDiputado\",\"party\":\"PartidoDiputado\",\"created_at\":\"2014-11-03T23:53:20.000Z\",\"updated_at\":\"2014-11-03T23:53:20.000Z\"},{\"id\":3,\"name\":\"NombreDiputado\",\"party\":\"PartidoDiputado\",\"created_at\":\"2014-11-03T23:53:20.000Z\",\"updated_at\":\"2014-11-03T23:53:20.000Z\"},{\"id\":4,\"name\":\"NombreDiputado\",\"party\":\"PartidoDiputado\",\"created_at\":\"2014-11-03T23:53:20.000Z\",\"updated_at\":\"2014-11-03T23:53:20.000Z\"},{\"id\":5,\"name\":\"NombreDiputado\",\"party\":\"PartidoDiputado\",\"created_at\":\"2014-11-03T23:53:20.000Z\",\"updated_at\":\"2014-11-03T23:53:20.000Z\"},{\"id\":6,\"name\":\"NombreDiputado\",\"party\":\"PartidoDiputado\",\"created_at\":\"2014-11-03T23:53:20.000Z\",\"updated_at\":\"2014-11-03T23:53:20.000Z\"},{\"id\":7,\"name\":\"NombreDiputado\",\"party\":\"PartidoDiputado\",\"created_at\":\"2014-11-03T23:53:20.000Z\",\"updated_at\":\"2014-11-03T23:53:20.000Z\"},{\"id\":8,\"name\":\"NombreDiputado\",\"party\":\"PartidoDiputado\",\"created_at\":\"2014-11-03T23:53:20.000Z\",\"updated_at\":\"2014-11-03T23:53:20.000Z\"},{\"id\":9,\"name\":\"NombreDiputado\",\"party\":\"PartidoDiputado\",\"created_at\":\"2014-11-03T23:53:20.000Z\",\"updated_at\":\"2014-11-03T23:53:20.000Z\"},{\"id\":10,\"name\":\"NombreDiputado\",\"party\":\"PartidoDiputado\",\"created_at\":\"2014-11-03T23:53:20.000Z\",\"updated_at\":\"2014-11-03T23:53:20.000Z\"}]",
       "response_headers": {
         "X-Frame-Options": "SAMEORIGIN",
         "X-XSS-Protection": "1; mode=block",
         "X-Content-Type-Options": "nosniff",
         "Content-Type": "application/json; charset=utf-8",
-        "ETag": "\"17d4ca65a9ad71814f6aeb6f94c15e5e\"",
+        "ETag": "\"d3a891ce7ed35957dd9ef4bd661e768e\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "c6cdff52-3b18-4272-b806-ba1f104296fa",
-        "X-Runtime": "0.006187",
-        "Content-Length": "592"
+        "X-Request-Id": "71dc6afc-3033-4b38-8dd1-8329ef884cfc",
+        "X-Runtime": "0.002249",
+        "Content-Length": "1392"
       },
       "response_content_type": "application/json; charset=utf-8",
       "curl": null

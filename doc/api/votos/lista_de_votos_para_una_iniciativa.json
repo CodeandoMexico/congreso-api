@@ -24,17 +24,17 @@
       "request_content_type": null,
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "[{\"id\":1,\"deputy_id\":1,\"initiative_id\":11,\"vote_type\":\"abstencion\"},{\"id\":2,\"deputy_id\":2,\"initiative_id\":11,\"vote_type\":\"abstencion\"},{\"id\":3,\"deputy_id\":3,\"initiative_id\":11,\"vote_type\":\"abstencion\"},{\"id\":4,\"deputy_id\":4,\"initiative_id\":11,\"vote_type\":\"abstencion\"},{\"id\":5,\"deputy_id\":5,\"initiative_id\":11,\"vote_type\":\"abstencion\"},{\"id\":6,\"deputy_id\":6,\"initiative_id\":11,\"vote_type\":\"abstencion\"},{\"id\":7,\"deputy_id\":7,\"initiative_id\":11,\"vote_type\":\"abstencion\"},{\"id\":8,\"deputy_id\":8,\"initiative_id\":11,\"vote_type\":\"abstencion\"},{\"id\":9,\"deputy_id\":9,\"initiative_id\":11,\"vote_type\":\"abstencion\"},{\"id\":10,\"deputy_id\":10,\"initiative_id\":11,\"vote_type\":\"abstencion\"}]",
+      "response_body": "[{\"id\":1,\"deputy_id\":1,\"initiative_id\":11,\"vote_type\":\"favor\",\"created_at\":\"2014-11-03T23:53:20.000Z\",\"updated_at\":\"2014-11-03T23:53:20.000Z\"},{\"id\":2,\"deputy_id\":2,\"initiative_id\":11,\"vote_type\":\"favor\",\"created_at\":\"2014-11-03T23:53:20.000Z\",\"updated_at\":\"2014-11-03T23:53:20.000Z\"},{\"id\":3,\"deputy_id\":3,\"initiative_id\":11,\"vote_type\":\"favor\",\"created_at\":\"2014-11-03T23:53:20.000Z\",\"updated_at\":\"2014-11-03T23:53:20.000Z\"},{\"id\":4,\"deputy_id\":4,\"initiative_id\":11,\"vote_type\":\"favor\",\"created_at\":\"2014-11-03T23:53:20.000Z\",\"updated_at\":\"2014-11-03T23:53:20.000Z\"},{\"id\":5,\"deputy_id\":5,\"initiative_id\":11,\"vote_type\":\"favor\",\"created_at\":\"2014-11-03T23:53:20.000Z\",\"updated_at\":\"2014-11-03T23:53:20.000Z\"},{\"id\":6,\"deputy_id\":6,\"initiative_id\":11,\"vote_type\":\"favor\",\"created_at\":\"2014-11-03T23:53:20.000Z\",\"updated_at\":\"2014-11-03T23:53:20.000Z\"},{\"id\":7,\"deputy_id\":7,\"initiative_id\":11,\"vote_type\":\"favor\",\"created_at\":\"2014-11-03T23:53:20.000Z\",\"updated_at\":\"2014-11-03T23:53:20.000Z\"},{\"id\":8,\"deputy_id\":8,\"initiative_id\":11,\"vote_type\":\"favor\",\"created_at\":\"2014-11-03T23:53:20.000Z\",\"updated_at\":\"2014-11-03T23:53:20.000Z\"},{\"id\":9,\"deputy_id\":9,\"initiative_id\":11,\"vote_type\":\"favor\",\"created_at\":\"2014-11-03T23:53:20.000Z\",\"updated_at\":\"2014-11-03T23:53:20.000Z\"},{\"id\":10,\"deputy_id\":10,\"initiative_id\":11,\"vote_type\":\"favor\",\"created_at\":\"2014-11-03T23:53:20.000Z\",\"updated_at\":\"2014-11-03T23:53:20.000Z\"}]",
       "response_headers": {
         "X-Frame-Options": "SAMEORIGIN",
         "X-XSS-Protection": "1; mode=block",
         "X-Content-Type-Options": "nosniff",
         "Content-Type": "application/json; charset=utf-8",
-        "ETag": "\"6d2c14ab751a8c1c32ec72313d5e0053\"",
+        "ETag": "\"8e657b29359e047068fc7f2f8ad92f29\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "324f0803-c2a9-4ff0-89cf-d2764d9bb0c8",
-        "X-Runtime": "0.012022",
-        "Content-Length": "673"
+        "X-Request-Id": "e11ee5a0-52c5-4e26-b2be-7ae4c0e026f9",
+        "X-Runtime": "0.009357",
+        "Content-Length": "1423"
       },
       "response_content_type": "application/json; charset=utf-8",
       "curl": null

@@ -4,6 +4,11 @@
       "name": "Diputados",
       "examples": [
         {
+          "description": "Información de un diputado",
+          "link": "diputados/información_de_un_diputado.json",
+          "groups": "all"
+        },
+        {
           "description": "Lista de diputados",
           "link": "diputados/lista_de_diputados.json",
           "groups": "all"
@@ -19,8 +24,8 @@
           "groups": "all"
         },
         {
-          "description": "Se puede ir a la siguiente pagina de las iniciativas",
-          "link": "iniciativas/se_puede_ir_a_la_siguiente_pagina_de_las_iniciativas.json",
+          "description": "Siguiente página de las iniciativas",
+          "link": "iniciativas/siguiente_página_de_las_iniciativas.json",
           "groups": "all"
         }
       ]
