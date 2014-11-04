@@ -6,7 +6,7 @@ gem 'rails', '4.1.6'
 gem 'rails-api'
 gem 'mysql2'
 gem 'route_translator'
-gem 'active_model_serializers'
+gem 'active_model_serializers', '0.8.2'
 gem 'ckan', github: 'acrogenesis/CKAN-rb'
 
 gem 'actionpack-action_caching'
